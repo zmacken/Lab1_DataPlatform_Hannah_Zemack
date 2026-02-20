@@ -18,7 +18,12 @@ def transform_data(df):#function for cleaning up raw data
 
     return df
 
-def flag_data(df): #function for flagging wrong data
+def flag_data(df):
+    df = df.copy() #function for flagging wrong data
+    df['flag'] = '' #empty flag column
+
+    df.loc[df['currency'].isna(), 'flag'] = 'missing currency' #flag missing currency
+
 
 
 
