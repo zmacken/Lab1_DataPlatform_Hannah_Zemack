@@ -26,6 +26,9 @@ def flag_data(df):
 
 
 
+    return df
+
+
 
 # import data
 raw_df = pd.read_csv('lab 1 - csv.csv', sep= ';')
@@ -37,6 +40,7 @@ raw_df = pd.read_csv('lab 1 - csv.csv', sep= ';')
 #use the function to transform data
 clean_df = transform_data(raw_df)
 
+flagged_df = flag_data(clean_df)
 
 #print(clean_df)
 
@@ -46,3 +50,5 @@ print(raw_df)
 print("=== CLEAN ===")
 print(clean_df)
 
+print("=== FLAGGED ===")
+print(flagged_df)
