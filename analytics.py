@@ -1,7 +1,7 @@
 import pandas as pd
 
 def analytics(df):
-    df_without_outliers = df[df['price'] < 10000]
+    df_without_outliers = df[df['price'] < 10000] #after manually checking all flags this is good based on the dataset
 
     analytics_summary = pd.DataFrame({
 
