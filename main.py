@@ -1,12 +1,6 @@
 import pandas as pd
-
-
-
-def rejected_data(df):
-    df = df.copy()
-
-
-
+from transform import transform_data
+from flag import flag_data
 
 # import data
 raw_df = pd.read_csv('lab 1 - csv.csv', sep= ';')
@@ -14,6 +8,7 @@ raw_df = pd.read_csv('lab 1 - csv.csv', sep= ';')
 #use the function to transform data
 transformed_df = transform_data(raw_df)
 
+#use the function to flag data
 flagged_df = flag_data(transformed_df)
 
 
