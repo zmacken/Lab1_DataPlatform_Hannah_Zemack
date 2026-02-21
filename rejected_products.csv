@@ -1,0 +1,8 @@
+id,name,price,currency,created_at,flag
+SKU-1002,pants,520.0,SEK,,missing created_at
+SKU-1003,shirts,450.0,SEK,,missing created_at
+,jacket,-200.0, SEK ,,missing idnegative pricemissing created_at
+SKU-1005,,,,,missing currencymissing namemissing created_at
+,hat,,SEK,,missing idmissing created_at
+SKU-1012,belt,300.0,SEK,,missing created_at
+SKU-1015,hoodie,-50.0,SEK,2024-04-15,negative price

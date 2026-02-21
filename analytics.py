@@ -27,3 +27,5 @@ def price_analysis(df):
         by=['category', 'price'], ascending=[True, False]
     ).to_csv('price_analysis.csv', index=False)
 
+def rejected_products(df):
+    df.to_csv('rejected_products.csv', index=False)

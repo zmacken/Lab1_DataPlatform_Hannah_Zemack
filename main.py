@@ -2,7 +2,7 @@ import pandas as pd
 from transform import transform_data
 from flag import flag_data
 from rejected import rejected_data
-from analytics import analytics_summary, price_analysis
+from analytics import analytics_summary, price_analysis, rejected_products
 
 # import data
 raw_df = pd.read_csv('lab 1 - csv.csv', sep= ';')
@@ -21,6 +21,9 @@ analytics_summary(clean_df)
 
 #use the function to create file no need to make it a variable
 price_analysis(clean_df)
+
+#use function to create file(just to keep conistent, in this case it might be redundant)
+rejected_products(rejected_df)
 
 #prints so that you can test what works and what doesn't
 print("=== RAW ===")
