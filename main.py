@@ -11,8 +11,6 @@ transformed_df = transform_data(raw_df)
 #use the function to flag data
 flagged_df = flag_data(transformed_df)
 
-
-
 #prints so that you can test what works and what doesn't
 print("=== RAW ===")
 print(raw_df)
