@@ -13,7 +13,7 @@ def analytics_summary(df):
     }).to_csv('analytics_summary.csv', index=False)
 
 def price_analysis(df):
-    df_without_outliers = df[df['price'] < 10000]
+    df_without_outliers = df[df['price'] < 10000].reset_index(drop=True)
 
     top_10_expensive = df_without_outliers.nlargest(10, 'price').copy()
     top_10_expensive['category'] = 'most expensive'
