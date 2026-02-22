@@ -1,4 +1,4 @@
-def rejected_data(df): #this function handles everything that i not appoproved and impossible to process
+def rejected_data(df): #this function handles everything that is not approved and impossible to process
     df = df.copy()
 
     invalid_rows = (

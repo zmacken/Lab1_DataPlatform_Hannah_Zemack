@@ -25,7 +25,7 @@ price_analysis(clean_df)
 #use function to create file(just to keep conistent, in this case it might be redundant)
 rejected_products(rejected_df)
 
-#prints so that you can test what works and what doesn't
+#prints so that you can test what works and what doesn't, comment away these if you don't want to use
 print("=== RAW ===")
 print(raw_df)
 
