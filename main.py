@@ -4,9 +4,10 @@ from flag import flag_data
 from rejected import rejected_data
 from analytics import analytics_summary, price_analysis, rejected_products
 
-# import data
+# EXTRACT
 raw_df = pd.read_csv('lab 1 - csv.csv', sep= ';')
 
+#TRANSFORM
 #use the function to transform data
 transformed_df = transform_data(raw_df)
 
@@ -16,6 +17,7 @@ flagged_df = flag_data(transformed_df)
 #use the function to reject data
 rejected_df, clean_df = rejected_data(flagged_df)
 
+#LOAD
 #use the function to create new file with analytics no need to make it a variable
 analytics_summary(clean_df)
 

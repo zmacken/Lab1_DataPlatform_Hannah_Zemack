@@ -3,11 +3,16 @@
 ## Setup
 ___
 
-För att köra koden kör först i terminalen:
+För att använda koden kör först i terminalen:
 
 ```uv sync```
 
 Alternativt använd egen virtual environment och installera pandas.
+
+## Run
+___
+
+För att köra koden kör endas main.py filen
 
 ## Teori
 
