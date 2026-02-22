@@ -78,6 +78,7 @@ ___
 I denna labb har jag valt att inte dela upp allt i olika directories. Även om det är bättre praxis.
 Detta eftersom det inte kändes nödvändigt i denna skala på projekt. 
 
+I vissa delar har en LLM använts som hjälpmedel. Men inte för att generera hela delar av kod.
 
 
 
