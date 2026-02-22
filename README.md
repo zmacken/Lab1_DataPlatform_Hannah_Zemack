@@ -1,10 +1,3 @@
-kan vara bra att lägga till något om att väljer att inte transformera saker som jag personligen kan se är fel
-
-bättre att flagga 
-
-notera att inte har directories eftersom onödigt i denna upg på denna skala
-
-
 # Hannah Zemack - Lab 1
 
 ## Setup
@@ -13,6 +6,8 @@ ___
 För att köra koden kör först i terminalen:
 
 ```uv sync```
+
+Alternativt använd egen virtual environment och installera pandas.
 
 ## Teori
 
@@ -52,7 +47,32 @@ Pandas är det som jag använder mig av under hela detta projekt. Det kan använ
 läsa in, städa, transformera och analyser data i DataFrames.
 
 #### Psycopg3
-Ett pythonbiliotek för att kunna komminucera med PostgreSQL
+Ett pythonbiliotek för att kunna komminucera med PostgreSQL. Kan användas när man istället
+för CSV filer har en databas. I en ETL används det ofta i load när man vill spara den transformerade datan
+till databasen.
+
+#### Pydantic
+Ett pythonbbliotek för validering av data.
+
+### ETL
+___
+
+#### Extract
+Hämta data från någon källa. Kan vara en databas, en fil eller något liknande.
+
+#### Transform
+Bearbeta och städa datan så att den sedan går att använda. Kan vara att ta bort felaktig data
+eller standardisera format.
+
+#### Load
+Innebär att spara den bearbetade och rena datan någonstans. Som i extract kan det vara en databas, en fil etc.
+
+### Noteringar
+___
+
+I denna labb har jag valt att inte dela upp allt i olika directories. Även om det är bättre praxis.
+Detta eftersom det inte kändes nödvändigt i denna skala på projekt. 
+
 
 
 
